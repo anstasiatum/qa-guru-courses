@@ -7,7 +7,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class SearchTests {
 
-    //Yandex main page opened
     @Test
     void yandexSuccessfulSearchTest() {
         Configuration.holdBrowserOpen = true;
@@ -15,7 +14,6 @@ public class SearchTests {
         $("html").shouldHave(text("Войти"));
     }
 
-    //Google main page opened
     @Test
     void googlePageCanBeOpened() {
         Configuration.holdBrowserOpen = true;
@@ -23,7 +21,6 @@ public class SearchTests {
         $("html").shouldHave(text("Россия"));
     }
 
-    //DuckDuckGo main page opened
     @Test
     void duckDuckGoPageCanBeOpened() {
         Configuration.holdBrowserOpen = true;
@@ -31,7 +28,6 @@ public class SearchTests {
         $("html").shouldHave(text("Chat"));
     }
 
-    //DuckDuckGo search results
     @Test
     void duckDuckGoSuccessfulSearchTest() {
         open("https://duckduckgo.com/");
