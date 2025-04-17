@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.open;
 
     public class SearchTests {
 
-        //Yandex main page
+        //Yandex main page opened
         @Test
         void yandexSuccessfulSearchTest() {
             Configuration.holdBrowserOpen = true;
